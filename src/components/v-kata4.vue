@@ -84,6 +84,64 @@
 //   return arr;
 // };
 // console.log(towerBuilder(3));
+
+// function decipherThis(str: string) {
+//   let arrayWords: any = str.split(" ");
+//   let arrayWithoutUnicode: any = [];
+//   arrayWords.forEach((word: string) => {
+//     let code = "";
+//     let _word = "";
+//     word.split("").forEach((letter) => {
+//       if (Number.isInteger(+letter)) {
+//         code += letter;
+//       } else {
+//         _word += letter;
+//       }
+//     });
+//     arrayWithoutUnicode.push(`${String.fromCharCode(+code)}${_word}`);
+//   });
+//   arrayWithoutUnicode.forEach((word: any, index: number) => {
+//     let letter = word[1];
+//     word = word.split("");
+//     word[1] = word.at(-1);
+//     word[word.length - 1] = letter;
+//     word = word.join("");
+//     arrayWithoutUnicode[index] = word;
+//   });
+//   return arrayWithoutUnicode.join(" ");
+// }
+// console.log(
+//   decipherThis("72eva 97 103o 97t 116sih 97dn 115ee 104wo 121uo 100o")
+// );
+
+// function humanReadable(seconds: number) {
+//   let second: any = 0;
+//   let hours: any = 0;
+//   let minute: any = 0;
+//   for (let index = 0; index < seconds; index++) {
+//     second++;
+//     if (second == 60) {
+//       minute++;
+//       second = 0;
+//     }
+//     if (minute == 60) {
+//       hours++;
+//       minute = 0;
+//     }
+//   }
+
+//   return formateTime(hours, minute, second).join(":");
+// }
+// function formateTime(...arg: number[]) {
+//   arg.forEach((date: any, index) => {
+//     if (date < 10) {
+//       date = "0" + date.toString();
+//     }
+//     arg[index] = date;
+//   });
+//   return arg;
+// }
+// console.log(humanReadable(60));
 </script>
 <template>
   <h1>Kata 4</h1>

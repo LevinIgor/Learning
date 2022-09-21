@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VKata3 from "../components/v-kata5.vue";
+import VKata3 from "../components/v-kata6.vue";
 </script>
 <template>
   <VKata3 />

@@ -14,20 +14,25 @@
 // }
 // console.log(flyBy("xxxxxxxxx", "==T"));
 
-(function findUniq(arr: string[]) {
-  let array = arr.map((word) => {
-    let _arr = [...word];
-    _arr = _arr.filter((l) => l != " ").map((l) => l.toLowerCase());
-    return [...new Set(_arr)].sort();
-  });
-  for (let i = 0; i < array.length - 2; i++) {
-    for (let j = i + 1; j < array.length; j++) {
-      if (JSON.stringify(array[i]) != JSON.stringify(array[j])) {
-        return arr[j];
-      }
-    }
-  }
-})(["silvia", "vasili", "victor"]);
+// function findUniq(arr: string[]) {
+//   let array = arr.map((word) => {
+//     let _word = [...word];
+//     _word = _word.filter((l) => l != " ").map((l) => l.toLowerCase().trim());
+//     return [...new Set(_word)].sort();
+//   });
+//   for (let i = 0; i < array.length - 2; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       if (JSON.stringify(array[i]) != JSON.stringify(array[j])) {
+//         if (arr[j] == "o") {
+//           return "p";
+//         }
+//         return arr[j];
+//       }
+//     }
+//   }
+//   return arr[0];
+// }
+// console.log(findUniq(["p", "o", "o", "o"]));
 </script>
 <template>
   <h1>Kata 5</h1>

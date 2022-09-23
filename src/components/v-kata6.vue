@@ -75,15 +75,27 @@
 // }
 // console.log(houseNumbersSum([1, 2, 3, 4, 5, 0]));
 
-function maxMultiple(divisor: number, bound: number): number {
-  let maximum = divisor;
-  while (maximum <= bound) {
-    maximum = maximum * 2;
-    console.log(maximum);
-  }
-  return maximum/2;
+// function maxMultiple(divisor: number, bound: number): number {
+//   let maximum = divisor;
+//   while (maximum <= bound) {
+//     maximum = maximum * 2;
+//     console.log(maximum);
+//   }
+//   return maximum/2;
+// }
+// console.log(maxMultiple(2, 7));
+
+let obj: any = { A: 21, B: 15, C: 10 };
+let average: any = 0;
+for (const key in obj) {
+  average += obj[key];
 }
-console.log(maxMultiple(2, 7));
+let size = Object.keys(obj).length;
+average = average / size;
+for (const key in obj) {
+  obj[key] = Math.round((obj[key] - average) * 100) / 100;
+}
+console.log(obj);
 </script>
 <template>
   <h1>Kata 6</h1>

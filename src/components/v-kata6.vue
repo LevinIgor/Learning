@@ -85,17 +85,33 @@
 // }
 // console.log(maxMultiple(2, 7));
 
-let obj: any = { A: 21, B: 15, C: 10 };
-let average: any = 0;
-for (const key in obj) {
-  average += obj[key];
-}
-let size = Object.keys(obj).length;
-average = average / size;
-for (const key in obj) {
-  obj[key] = Math.round((obj[key] - average) * 100) / 100;
-}
-console.log(obj);
+// let obj: any = { A: 21, B: 15, C: 10 };
+// let average: any = 0;
+// for (const key in obj) {
+//   average += obj[key];
+// }
+// let size = Object.keys(obj).length;
+// average = average / size;
+// for (const key in obj) {
+//   obj[key] = Math.round((obj[key] - average) * 100) / 100;
+// }
+// console.log(obj);
+
+// const maxTriSum = (nums: number[]): number => [...new Set(nums)].sort((a, b) => b - a).slice(0, 3).reduce((acc, val) => acc + val, 0);
+
+//  function flattenAndSort(inputArray: number[][]): number[] {
+// let array = []
+// for(let i = 0; i<inputArray.length;i++){
+//   array.push(...inputArray[i])
+// }
+//   return array.sort((a,b)=>a-b)
+// }
+let arr:any = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
 </script>
 <template>
   <h1>Kata 6</h1>

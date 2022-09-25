@@ -106,12 +106,49 @@
 // }
 //   return array.sort((a,b)=>a-b)
 // }
-let arr:any = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
+// let arr:any = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
 
+//  const high = (str: string): string =>{
+//   let array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+//   let words = str.split(' ')
+//   let scores = words.map((word)=>{
+//     return [...word].reduce((acc,letter)=> {
+//       let index = array.findIndex((l)=> l==letter)
+//       acc+=index + 1
+//       return acc
+//     },0)
+//   })
+//   let maxIndex = scores.findIndex((score)=> score == Math.max(...scores))
+//   return words[maxIndex]
+// }
+
+// function persistence(num: number, count: number = 0): number {
+//   // return num < 10
+//   //   ? 0
+//   //   : 1 + persistence([...num.toString()].reduce((a, c) => a * +c, 1));
+//   return num.toString().length == 1
+//     ? count
+//     : persistence(
+//         [...num.toString()].reduce((a,c) => a * +c, 1),
+//         count + 1
+//       );
+// }
+// console.log(persistence(999));
+// const findOdd = (xs: number[]): number => {
+//   let array = [...new Set(xs)];
+//   let countArray = array.map((number) =>
+//     xs.reduce((acc, num) => (num == number ? (acc += 1) : acc), 0)
+//   );
+//   let index = countArray.findIndex((element) => (element & 1) == 1);
+
+//   return array[index];
+// };
+
+// console.log(findOdd([1,1,2]));
 </script>
 <template>
   <h1>Kata 6</h1>

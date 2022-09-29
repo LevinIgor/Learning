@@ -64,5 +64,39 @@
 //     ? str.slice(Math.floor(length / 2) - 1, Math.ceil(length / 2) + 1)
 //     : str.slice(Math.floor(length / 2), Math.ceil(length / 2));
 // console.log(res);
+
+// let values = [-2, -4, -6, -11, -11, -5, -3];
+// let sortArray = values.sort((a, b) => a - b);
+// let middle = sortArray[0];
+// sortArray = sortArray.slice(1);
+// let leftArray = sortArray.filter((_, index) => index & 1);
+// let rightArray = sortArray.filter((_, index) => !(index & 1));
+// leftArray = leftArray.reverse();
+// console.log([...leftArray, middle, ...rightArray]);
+
+// let array = [9,8,7,6,5,4,3,2];
+// let min = 0;
+
+// for (let i = 0; i < array.length - 1; i++) {
+//   min = array[i];
+//   for (let j = i + 1; j < array.length; j++) {
+//     if (array[j] < min) {
+//       min = array[j];
+//       let temp = array[i];
+//       array[i] = array[j];
+//       array[j] = temp;
+//     }
+//   }
+// }
+// console.log(array);
+//  const mutate = (chromosome: string, p: number): string => {
+//   if(p == 0) return chromosome
+//   if(p == 1){
+//     return chromosome.split('').map((el)=> el == '1' ? 0:1).join('')
+//   }
+//   return chromosome.split('').map(()=>'1').join('')
+
+// };
+
 </script>
 <template><h1>Kata 7</h1></template>

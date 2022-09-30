@@ -98,5 +98,19 @@
 
 // };
 
+// function sumCubes(n: number): any {
+//   return n > 0 ? n ** 3 + sumCubes(n - 1) : 0;
+// }
+
+// console.log(sumCubes(3));
+
+// function rowWeights(arr: number[]) {
+//   return arr.reduce(
+//     (acc: number[], number, index) =>
+//       index & 1 ? acc.push(number) : acc.push(number),
+//     [0,0]
+//   );
+// }
+// console.log(rowWeights([1, 2, 3, 4, 5, 6, 7, 8]));
 </script>
 <template><h1>Kata 7</h1></template>

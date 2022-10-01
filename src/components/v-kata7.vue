@@ -112,5 +112,10 @@
 //   );
 // }
 // console.log(rowWeights([1, 2, 3, 4, 5, 6, 7, 8]));
+
+function solve(s: string) {
+  return s.match(/[qwe]/gi);
+}
+console.log(solve("qeerqq"));
 </script>
 <template><h1>Kata 7</h1></template>

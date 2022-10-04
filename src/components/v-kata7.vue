@@ -113,9 +113,58 @@
 // }
 // console.log(rowWeights([1, 2, 3, 4, 5, 6, 7, 8]));
 
-function solve(s: string) {
-  return s.match(/[qwe]/gi);
-}
-console.log(solve("qeerqq"));
+// function solve(s: string) {
+//   return s.match(/[qwe]/gi);
+// }
+// console.log(solve("qeerqq"));
+
+// function specialNumber(n: number) {
+//   return n.toString().match(/[012345]/g)?.length === n.toString().length
+//     ? "Special"
+//     : "NOT!!";
+// }
+// console.log(specialNumber(1234));
+
+// let str = "slkfweof43";
+
+// console.log(str.matchAll(/[1]/g));
+
+// function shuffledArray(shuffled: number[]): number[] {
+//   let sum = shuffled.reduce((a, b) => a + b) / 2;
+//   let res: number[] = [];
+//   shuffled.forEach((el) => {
+//     if (el != sum) {
+//       res.push(el);
+//     } else {
+//       sum = Infinity;
+//     }
+//   });
+//   return res.sort((a, b) => a - b);
+// }
+
+// console.log(shuffledArray([-3, -3]));
+
+//  function vowelIndices(word: string): number[] {
+//   let arr: number[] = [];
+//   let vowels = ["e", "y", "u", "o", "i", "a"];
+//   word
+//     .split("")
+//     .map((letter, index) =>
+//       vowels.includes(letter) ? arr.push(index + 1) : ""
+//     );
+//   return arr;
+// }
+
+// var uniqueInOrder = function (iterable: any) {
+//   let res = [];
+//   for (let i = 0; i < iterable.length; i++) {
+//     if (iterable[i] !== iterable[i + 1] || iterable[i + 1] === undefined) {
+//       res.push(iterable[i]);
+//     }
+//     console.log(iterable[i]);
+//   }
+//   return res;
+// };
+// console.log(uniqueInOrder("AAAABBBCCDAABBB"));
 </script>
 <template><h1>Kata 7</h1></template>

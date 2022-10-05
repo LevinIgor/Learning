@@ -166,5 +166,35 @@
 //   return res;
 // };
 // console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+
+// function longestRepetition(text: string): [string, number] {
+//   let unique = [...new Set(text.split(""))];
+//   let maxCount = { letter: "", count: 0 };
+//   for (let i = 0; i < unique.length; i++) {
+//     let count = 0;
+//     for (let j = i; j < text.length; j++) {
+//       if (unique[i] === text[j]) {
+//         count += 1;
+//       } else {
+//         if (maxCount.count < count) {
+//           maxCount.count = count;
+//           maxCount.letter = text[i];
+//           console.log(count);
+//           count = 0;
+//         }
+//       }
+//     }
+//   }
+//   return [maxCount.letter, maxCount.count];
+// }
+
+// console.log(longestRepetition("abbbbb"));
+
+//  function findOutlier(integers: number[]): number {
+//   return Math.min(
+//     integers.filter((n) => n % 2 == 0).length,
+//     integers.filter((n) => n % 2 !== 0).length
+//   );
+// }
 </script>
 <template><h1>Kata 7</h1></template>

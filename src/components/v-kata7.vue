@@ -196,5 +196,33 @@
 //     integers.filter((n) => n % 2 !== 0).length
 //   );
 // }
+// function orderedCount(text: string): any {
+//   let unique = [...new Set(text.split(""))];
+//   console.log(unique);
+//   let result: [string, number][] = [];
+//   for (let i = 0; i < unique.length; i++) {
+//     let temp: [string, number] = [unique[i], 0];
+//     console.log(temp);
+//     for (let j = 0; j < text.length; j++) {
+//       if (unique[i] === text[j]) {
+//         temp[1] += 1;
+//       }
+//     }
+//     result.push(temp);
+//   }
+//   return result;
+// }
+
+// console.log(orderedCount("aabbcca"));
+
+// function sumOfDifferences(arr: number[]): number {
+//   let sorted = arr.sort((a, b) => b - a);
+
+//   return sorted.reduce((acc, number, index) => {
+//     if (index == sorted.length - 1) return acc;
+//     return acc + (number - sorted[index + 1]);
+//   }, 0);
+// }
+// console.log(sumOfDifferences([1, 2, 10]));
 </script>
 <template><h1>Kata 7</h1></template>

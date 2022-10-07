@@ -224,5 +224,32 @@
 //   }, 0);
 // }
 // console.log(sumOfDifferences([1, 2, 10]));
+// function mean(lst: string[]): [any, string] {
+//   let numbersSum: any = lst
+//     .toString()
+//     .match(/[0-9]/g)?.map((el) => Number(el))
+//     .reduce((a, b) => a + b);
+//   console.log(numbersSum);
+//   let letters: any = lst.toString().match(/[a-z]/gi);
+//   return [numbersSum / 10, letters.join("")];
+// }
+// console.log(
+//   mean([
+//     "u","6","d","1","i","w","6",
+//     "s",
+//     "t",
+//     "4",
+//     "a",
+//     "6",
+//     "g",
+//     "1",
+//     "2",
+//     "w",
+//     "8",
+//     "o",
+//     "2",
+//     "0",
+//   ])
+// );
 </script>
 <template><h1>Kata 7</h1></template>

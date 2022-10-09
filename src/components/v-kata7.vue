@@ -252,43 +252,70 @@
 //   ])
 // );
 
-function gematria(str: string): number {
-  let values: any = {
-    a: 1,
-    b: 2,
-    c: 3,
-    d: 4,
-    e: 5,
-    f: 6,
-    g: 7,
-    h: 8,
-    i: 9,
-    k: 10,
-    l: 20,
-    m: 30,
-    n: 40,
-    o: 50,
-    p: 60,
-    q: 70,
-    r: 80,
-    s: 90,
-    t: 100,
-    u: 200,
-    x: 300,
-    y: 400,
-    z: 500,
-    j: 600,
-    v: 700,
-    w: 900,
-  };
-  let sum = 0;
-  str = str.replace(/ /g, "");
-  for (let i = 0; i < str.length; i++) {
-    sum += values[str[i].toLowerCase()];
-    console.log(str[i]);
-  }
-  return sum;
-}
-console.log(gematria("Coding is fun"));
+// function gematria(str: string): number {
+//   let values: any = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4,
+//     e: 5,
+//     f: 6,
+//     g: 7,
+//     h: 8,
+//     i: 9,
+//     k: 10,
+//     l: 20,
+//     m: 30,
+//     n: 40,
+//     o: 50,
+//     p: 60,
+//     q: 70,
+//     r: 80,
+//     s: 90,
+//     t: 100,
+//     u: 200,
+//     x: 300,
+//     y: 400,
+//     z: 500,
+//     j: 600,
+//     v: 700,
+//     w: 900,
+//   };
+//   let sum = 0;
+//   str = str.replace(/ /g, "");
+//   for (let i = 0; i < str.length; i++) {
+//     sum += values[str[i].toLowerCase()];
+//     console.log(str[i]);
+//   }
+//   return sum;
+// }
+// console.log(gematria("Coding is fun"));
+
+// function figureOut(arr: string[]): any {
+//   let first;
+//   let second;
+//   let res = -1;
+//   for (let index = 0; index < arr.length - 1; index++) {
+//     first = [...new Set(arr[index].split(""))];
+//     second = [...new Set(arr[index + 1].split(""))];
+//     let equalsResult = equals(first, second);
+//     res = equalsResult == null ? res : equalsResult;
+//   }
+//   return res;
+// }
+
+// function equals(f: string[], s: string[]) {
+//   let res: null | string = null;
+//   f.forEach((_, index) => {
+//     if (f.indexOf(s[index]) - index >= 2 || f.indexOf(s[index]) - index <= -2) {
+//       res = s[index];
+//     }
+//   });
+//   return res;
+// }
+
+// console.log(figureOut(["icwth", "wicth", "witch"]));
+
+
 </script>
 <template><h1>Kata 7</h1></template>

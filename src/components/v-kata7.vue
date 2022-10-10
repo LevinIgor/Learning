@@ -316,6 +316,17 @@
 
 // console.log(figureOut(["icwth", "wicth", "witch"]));
 
-
+// function points(games: string[]): number {
+//   return games.reduce((acc, item) => {
+//     let x = item[0];
+//     let y = item[2];
+//     if (x === y) acc += 1;
+//     if (+x > +y) acc += 3;
+//     return acc;
+//   }, 0);
+// }
+// console.log(
+//   points(["1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4"])
+// );
 </script>
 <template><h1>Kata 7</h1></template>

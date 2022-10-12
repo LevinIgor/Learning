@@ -328,5 +328,19 @@
 // console.log(
 //   points(["1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4"])
 // );
+
+// function shark(
+//   pontoonDistance: number,
+//   sharkDistance: number,
+//   youSpeed: number,
+//   sharkSpeed: number,
+//   dolphin: boolean
+// ): string {
+//   if (dolphin) sharkSpeed /= 2;
+//   let youTime = pontoonDistance / youSpeed;
+//   let sharkTime = sharkDistance / sharkSpeed;
+//   return youTime < sharkTime ? "Alive!" : "Shark Bait!";
+// }
+// console.log(shark(12, 50, 4, 8, true));
 </script>
 <template><h1>Kata 7</h1></template>

@@ -342,5 +342,17 @@
 //   return youTime < sharkTime ? "Alive!" : "Shark Bait!";
 // }
 // console.log(shark(12, 50, 4, 8, true));
+
+// const nbYear = (
+//   p0: number,
+//   percent: number,
+//   aug: number,
+//   p: number
+// ): number => {
+//   return p0 >= p
+//     ? 0
+//     : 1 + nbYear(p0 + (p0 / 100) * percent + aug, percent, aug, p);
+// };
+// console.log(nbYear(1500, 5, 100, 5000));
 </script>
 <template><h1>Kata 7</h1></template>

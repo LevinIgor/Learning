@@ -354,5 +354,10 @@
 //     : 1 + nbYear(p0 + (p0 / 100) * percent + aug, percent, aug, p);
 // };
 // console.log(nbYear(1500, 5, 100, 5000));
+
+// function solution(str: string, ending: string): boolean {
+//   return str.endsWith(ending);
+// }
+// console.log(solution("abc", "bc"));
 </script>
 <template><h1>Kata 7</h1></template>
